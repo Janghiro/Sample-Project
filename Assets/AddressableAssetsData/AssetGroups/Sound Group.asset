@@ -16,27 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 9556b17fe2f38084b800001af34930d7
-  m_SerializeEntries:
-  - m_GUID: ddc8b79cd02921b42a99818b54a31d06
-    m_Address: Assets/Sounds/InventoryChange.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: ece6cd49f8c91f944a8888e604ded989
-    m_Address: Assets/Sounds/MainScene.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 6291cf2f68ed7ad4996085063ce8418d
-    m_Address: Assets/Sounds/Gold.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 21acc16cea2d50540824fdef992966c8
-    m_Address: Assets/Sounds/DungeonScene.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 55d33af174169f547b0115a774172ce7
-    m_Address: Assets/Sounds/DialogueEffect.mp3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 24fbd3b980f40fd4384dc1641c029845, type: 2}
   m_SchemaSet:
