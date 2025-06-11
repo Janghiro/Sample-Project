@@ -16,47 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: b0341df3150d31f4d8b084e819c706a6
-  m_SerializeEntries:
-  - m_GUID: 43253d293d1abcc49b421e50d9eae52c
-    m_Address: Assets/Prefabs/WeaponPrefabs/Punch.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 6e0da82498b391b4ebe80c794c8307ac
-    m_Address: Assets/Prefabs/WeaponPrefabs/Sword_01.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 5fddf9e54dd98b849b3badd3d09c7433
-    m_Address: Assets/Prefabs/WeaponPrefabs/Sword_02.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 17b5a9f088a12e046b4d27ed1aaf1faf
-    m_Address: Assets/Prefabs/WeaponPrefabs/Sword_03.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 9d38b3d862bae5748b5d68e425517e75
-    m_Address: Assets/Prefabs/WeaponPrefabs/Bow_01.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 2e5f0f5c800d8994fb1eec97980898f0
-    m_Address: Assets/Prefabs/WeaponPrefabs/Bow_02.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 02b65bb78a55fc841b4384cbc9e35f77
-    m_Address: Assets/Prefabs/WeaponPrefabs/Bow_03.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 7f9e1399071f4654e89806270eb26859
-    m_Address: Assets/Prefabs/WeaponPrefabs/Staff_01.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 9b4452415b2b60a4cb8ef7b16b99126f
-    m_Address: Assets/Prefabs/WeaponPrefabs/Staff_02.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 85dd2fe67dab2a44e9cc1a440ce164c7
-    m_Address: Assets/Prefabs/WeaponPrefabs/Staff_03.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 24fbd3b980f40fd4384dc1641c029845, type: 2}
   m_SchemaSet:
