@@ -39,29 +39,12 @@ public class PlayerItemSlotUI : MonoBehaviour
 
         slotItem = item;
 
-        ResourceManager.Instance.LoadIcon(item.Data.ItemIcon, sprite =>
-        {
-            if (sprite != null)
-            {
-                icon.sprite = sprite;
-                icon.color = new Color(1f, 1f, 1f, 1f);
+        if (slotItem.Amount > 1)
+            ShowAmount();
+        else
+            HideAmount();
 
-                if(slotItem.Amount > 1)
-                {
-                    ShowAmount();
-                }
-                else
-                {
-                    HideAmount();
-                }
-                
-                amount.text = item.Amount.ToString();
-            }
-            else
-            {
-                Debug.Log($"Failed to load icon for item : {item.Data.ItemIcon}");
-            }
-        });
+        amount.text = item.Amount.ToString();
     }
 
     // 슬롯의 아이템 제거

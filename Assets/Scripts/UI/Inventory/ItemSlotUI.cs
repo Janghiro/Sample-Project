@@ -176,23 +176,10 @@ public class ItemSlotUI : MonoBehaviour
     {
         if (itemSprite != null)
         {
-            // 아이콘 데이터 가져오기
-            ResourceManager.Instance.LoadIcon(itemSprite, sprite =>
-            {
-                // 성공
-                if (sprite != null)
-                {
-                    // 아이콘 이름 저장
-                    iconName = itemSprite;
-                    // 아이콘 설정
-                    iconImage.sprite = sprite;
-                    ShowIcon();
-                }
-                else
-                {
-                    Debug.Log($"Failed to load icon for item : {itemSprite}");
-                }
-            });
+            // ResourceManager 코드 삭제하고 직접 설정
+            iconName = itemSprite;
+            iconImage.sprite = null; // TODO: 이후 직접 스프라이트 설정 가능
+            ShowIcon();
         }
         else
         {
@@ -205,34 +192,16 @@ public class ItemSlotUI : MonoBehaviour
     {
         if (itemSprite != null)
         {
-            // 아이콘 데이터 가져오기
-            ResourceManager.Instance.LoadIcon(itemSprite, sprite =>
-            {
-                // 성공
-                if (sprite != null)
-                {
-                    // 아이콘 이름 저장
-                    iconName = itemSprite;
-                    // 아이콘 설정
-                    iconImage.sprite = sprite;
+            iconName = itemSprite;
+            iconImage.sprite = null; // TODO: 이후 직접 스프라이트 설정 가능
 
-                    if(amount > 1)
-                    {
-                        ShowText();
-                    }
-                    else
-                    {
-                        HideText();
-                    }
+            if (amount > 1)
+                ShowText();
+            else
+                HideText();
 
-                    ShowIcon();
-                    amountText.text = amount.ToString();
-                }
-                else
-                {
-                    Debug.Log($"Failed to load icon for item : {itemSprite}");
-                }
-            });
+            ShowIcon();
+            amountText.text = amount.ToString();
         }
         else
         {

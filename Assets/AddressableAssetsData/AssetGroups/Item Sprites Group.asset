@@ -16,71 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: e1dc439c3efa8944d9c184e829c49660
-  m_SerializeEntries:
-  - m_GUID: b7d19ec039fa7b141bd165aa95496c75
-    m_Address: Assets/Sprites/Item_PortionItem_Elixir.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: dbaa50961e3cd37468021eb65d631c9f
-    m_Address: Assets/Sprites/Item_PortionItem_ManaElixir.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 78b8a79109fe4204f8c91959a2b91642
-    m_Address: Assets/Sprites/Item_WeaponItem_Sword_02.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: e78255beda0be8444a32a8debe881b9c
-    m_Address: Assets/Sprites/Item_WeaponItem_Sword_01.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 28b103e16acf21b45afc90eb7afb7e42
-    m_Address: Assets/Sprites/Item_ArmorItem_Top_02.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 5105fe1d825990746b9a92407ea447ca
-    m_Address: Assets/Sprites/Item_ArmorItem_Top_01.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: d7236dfb0d0b195439305df676f2425b
-    m_Address: Assets/Sprites/Item_ArmorItem_Gloves_01.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: a889cb8ba677b3e418c33307c1336099
-    m_Address: Assets/Sprites/Item_ArmorItem_Gloves_02.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 1d8079fa48e88ed49852670f6e400c18
-    m_Address: Assets/Sprites/Item_ArmorItem_Shoes_01.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 9b0fcb2d73478da41bbfce2b14d38e86
-    m_Address: Assets/Sprites/Item_ArmorItem_Shoes_02.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 51d0cbd98e5243c4eac6f1e283a558c2
-    m_Address: Assets/Sprites/Item_WeaponItem_Bow_03.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 4ebc70b29cf84034aa52eafdbca3951d
-    m_Address: Assets/Sprites/Item_WeaponItem_Staff_03.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: c6b96b87adbd25343b9079d963ffb637
-    m_Address: Assets/Sprites/Item_WeaponItem_Bow_01.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 0c7f2b30efde63b4e85506baea6e3484
-    m_Address: Assets/Sprites/Item_WeaponItem_Bow_02.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: a4b5f62f33b3e004e8aace652e009615
-    m_Address: Assets/Sprites/Item_WeaponItem_Staff_02.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 469c2629c08b96944b6e1f3575449d4b
-    m_Address: Assets/Sprites/Item_WeaponItem_Staff_01.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 24fbd3b980f40fd4384dc1641c029845, type: 2}
   m_SchemaSet:

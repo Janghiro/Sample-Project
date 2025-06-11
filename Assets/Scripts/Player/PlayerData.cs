@@ -81,9 +81,9 @@ public class PlayerData
             Position = new PlayerDataDTO.PositionDTO
             {
                 // 플레이어 현재 위치
-                posX = GameManager.Instance.player.transform.position.x,
-                posY = GameManager.Instance.player.transform.position.y,
-                posZ = GameManager.Instance.player.transform.position.z
+                posX = this.posX,
+                posY = this.posY,
+                posZ = this.posZ
             }
         };
     }
@@ -134,11 +134,5 @@ public class PlayerData
         curHp -= damage;
         if (curHp <= 0)
             curHp = 0;
-    }
-
-    // 골드 사용
-    public void UseGold(int amount)
-    {
-        gold = (gold - amount) < 0 ? 0 : gold - amount;
     }
 }

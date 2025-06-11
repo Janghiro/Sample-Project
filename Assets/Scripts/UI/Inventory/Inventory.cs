@@ -31,7 +31,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private InventoryUI inventoryUI;
     [SerializeField] private GameObject inventoryGo;
     [SerializeField] private Item[] items;
-    [SerializeField] private EquipmentUI equipmentUI;
+    //[SerializeField] private EquipmentUI equipmentUI;
     [SerializeField] private PlayerItemGroupUI playerItemGruopUI;
     #endregion
 
@@ -244,11 +244,11 @@ public class Inventory : MonoBehaviour
         }
 
         // 아이콘 제거 함수
-        void RemoveIcon()
-        {
-            inventoryUI.RemoveItem(index);
-            inventoryUI.HideItemAmountText(index);
-        }
+        //void RemoveIcon()
+        //{
+        //    inventoryUI.RemoveItem(index);
+        //    inventoryUI.HideItemAmountText(index);
+        //}
 
         // 인벤토리 데이터 저장
         SaveInventoryData();
@@ -466,7 +466,7 @@ public class Inventory : MonoBehaviour
             items[beginIndex] = itemB;
             items[endIndex] = itemA;
         }
-        AudioManager.Instance.PlaySFX("InventoryChange");
+
         // 슬롯 갱신
         UpdateSlot(beginIndex, endIndex);
     }
@@ -499,67 +499,12 @@ public class Inventory : MonoBehaviour
             }
         }
         // 2. 장비 아이템일 때
-        else if(items[index] is IEquipableItem)
+        else if (items[index] is IEquipableItem)
         {
-            // 2.1. 무기 아이템일때 
-            if(items[index] is WeaponItem curWeapon)
-            {
-                // 장착중인 아이템이 있으면 해제
-                if (equipmentUI.slotUIList[0].HasItem)
-                {
-                    // 장착중인 아이템
-                    WeaponItem prevItem = (WeaponItem)equipmentUI.items[0];
-                    // 인벤토리에 아이템 추가
-                    AddItem(prevItem.Data);
-                    // 캐릭터 정보창 슬롯의 아이콘 제거
-                    equipmentUI.slotUIList[0].RemoveItemIcon();
-                    // 장착 해제
-                    prevItem.Unequip();
-                }
-                curWeapon.Equip();
-                equipmentUI.SetItemIcon(curWeapon, curWeapon.WeaponData.Type, curWeapon.Data.ItemIcon);
-            }
-            // 2.2 방어구 아이템일때
-            else if(items[index] is ArmorItem curArmor)
-            {
-                // 장착중인 아이템이 있으면 해제
-                if(equipmentUI.slotUIList[TypeToIndex(curArmor)].HasItem)
-                {
-                    // 장착중인 아이템
-                    ArmorItem prevItem = (ArmorItem)equipmentUI.items[TypeToIndex(curArmor)];
-                    // 인벤토리에 아이템 추가
-                    AddItem(prevItem.Data);
-                    // 캐릭터 정보창 슬롯의 아이콘 제거
-                    equipmentUI.slotUIList[TypeToIndex(curArmor)].RemoveItemIcon();
-                    // 장착 해제
-                    prevItem.Unequip();
-                }
-                curArmor.Equip();
-                equipmentUI.SetItemIcon(curArmor, curArmor.ArmorData.SubType, curArmor.Data.ItemIcon);
-            }
-            // 방어구 타입별 인덱스
-            int TypeToIndex(ArmorItem curItem)
-            {
-                int typeIndex;
-                switch (curItem.ArmorData.SubType)
-                {
-                    case "Shoes":
-                        typeIndex = 1;
-                        return typeIndex;
-                    case "Gloves":
-                        typeIndex = 2;
-                        return typeIndex;
-                    case "Top":
-                        typeIndex = 3;
-                        return typeIndex;
-                    default:
-                        return 0;
-                }
-            }
-
             Remove(index);
         }
-            UpdateSlot(index); 
+
+        UpdateSlot(index); 
     }
     #endregion
 }

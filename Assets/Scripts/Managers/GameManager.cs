@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    [SerializeField] public PlayerController player;
+    //[SerializeField] public PlayerController player;
     [SerializeField] public GameObject profileUI;
 
     protected override void Awake()
